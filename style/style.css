@@ -1,0 +1,569 @@
+@import "./fonts.css";
+/*CSS ПЕРВОГО ЗАДАНИЯ*/
+.body {
+    padding: 0;
+    margin: 0;
+    font-family: "Open Sans", sans-serif;
+}
+
+/*Настройки тела*/
+.hero {
+    background: url("../images/bg.png") no-repeat center/cover;
+    height: calc(100vh - 142px);
+    padding: 71px;
+
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/*Настройки Секции HERO*/
+.heroMain_text1 {
+    margin: 0;
+    color: white;
+    font-weight: 700;
+    font-family: "BebasNeue", sans-serif;
+    font-size: 60px;
+    line-height: 70px;
+    letter-spacing: 5.70937px;
+    text-align: center;
+}
+
+/*Настройки текста 1 в HERO*/
+.heroMain_text2 {
+    margin: 0;
+    color: white;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 22px;
+    text-align: center;
+}
+
+/*Настройки текста 2 в HERO*/
+.heroButton1 {
+    background: none;
+    color: white;
+    border: none;
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 15px;
+    letter-spacing: 3.7px;
+}
+
+/*Настройки кнопки в HERO*/
+.heroButton1:hover {
+    color: aqua;
+    transition: 0.5s;
+}
+
+/*Настройки событий при наводки мышки кнопки*/
+.container {
+    max-width: 980px;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+
+/*Настройки Контейнер сайта*/
+.header {
+    height: 65px;
+    background: #FFFFFF;
+    border: 1px solid #E6E6E6;
+}
+
+/*Настройки шапки сайта*/
+.header .container {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/*Поднастройки контейнера шапки*/
+.header_link {
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 1.09091px;
+    margin-left: 42px;
+}
+
+/*Настройки навигации сайта*/
+.header_link:hover {
+    color: aqua;
+    transition: 0.5s all;
+}
+
+/*Обработка событий мышки шапки сайта*/
+.sect1_MainText {
+    padding: 57px 0 72px;
+}
+
+/*Главный текст Our Story*/
+.reference_None {
+    text-decoration: none;
+    color: deepskyblue;
+}
+
+/*Убирает нижнее подчеркивание и меняет цвет у ссылок*/
+.sect1_MainText_OurStory {
+    position: relative;
+    margin: 0;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 25px;
+    text-align: center;
+    letter-spacing: 2.30625px;
+}
+
+/*Блок с текстом внутри Our Story*/
+.sect1_MainText_OurStory::before {
+    content: "";
+    position: absolute;
+    width: 50px;
+    height: 2px;
+    right: 0;
+    left: 0;
+    margin: 0 auto;
+    bottom: -10px;
+    background-color: #00A4E5;
+}
+
+/*Линия Our Story*/
+.col6 {
+    width: 50%;
+}
+
+/*Сетка на 50% ширины от родителя*/
+.sect1_text1 {
+    padding: 0;
+    max-height: 344px;
+}
+
+/*Настройки блока Our Story*/
+.sect1_OurStory .container {
+    display: flex;
+    justify-content: space-between;
+}
+
+/*Поднастройки секции Our Story*/
+.col61_text1 {
+    margin: 0;
+    width: 405px;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 27px;
+    letter-spacing: 0.1875px;
+    color: #48555B;
+}
+
+/*Первый текст внутри блока Our Story*/
+.col61_text2 {
+    margin: 38px 0 0 0;
+    width: 405px;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 24px;
+    letter-spacing: 0.1875px;
+}
+
+/*Второй текст внутри блока Our Story*/
+.col4_sub {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    height: 261px;
+}
+
+/*Блок с картинами Our Story*/
+.col4_1 {
+    position: relative;
+    background: url("../images/Bitmap1.png") no-repeat center/cover;
+    height: 224px;
+    width: 140px;
+}
+
+/*Первая картина Our Story*/
+.col4_2 {
+    position: relative;
+    background: url("../images/Bitmap.png") no-repeat center/cover;
+    height: 224px;
+    width: 140px;
+}
+
+/*Вторая картина Our Story*/
+.col4_3 {
+    position: relative;
+    background: url("../images/Bitmap3.png") no-repeat center/cover;
+    height: 224px;
+    width: 140px;
+}
+
+/*Третья картина Our Story*/
+.sect1_text1 {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    margin: 0;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 24px;
+    line-height: 29px;
+    letter-spacing: 0.1875px;
+    width: 68px;
+    height: 58px;
+    color: white;
+}
+
+/*Настройки текста внутри картинки в Our Story*/
+.sect1_text1:hover {
+    color: lightskyblue;
+    transition: 0.5s;
+}
+
+/*Обработка событий мышки в Our Story*/
+.services {
+    padding: 117px 0 115px;
+
+}
+
+/*Настройки Секции Services*/
+.section_top {
+    display: flex;
+    justify-content: space-between;
+}
+
+/*Настройки верхнего блока Services*/
+.btn_text {
+    display: flex;
+}
+
+/*див верхнего блока с текстом и кнопкой Services*/
+.secTop_text1 {
+    position: relative;
+    margin: 0;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 25px;
+    letter-spacing: 2.30625px;
+    height: 25px;
+}
+
+/*Первый текст верхнего блока Services*/
+.secTop_text1::before {
+    content: "";
+    position: absolute;
+    width: 50px;
+    height: 2px;
+    left: 0;
+    bottom: -10px;
+    background-color: #00A4E5;
+}
+
+/*Линия верхнего блока под текстом*/
+.sectTop_text2 {
+    margin: 0;
+    width: 405.4px;
+    font-weight: normal;
+    font-size: 11px;
+    line-height: 19px;
+    letter-spacing: 0.2px;
+}
+
+/*Второй текст верхнего блока Services*/
+.btn_allServ {
+    margin-left: 32px;
+    background: #00A4E5;
+    border: none;
+    width: 150px;
+    height: 40px;
+}
+
+/*Кнопка верхнего блока в диве btn_text*/
+.btn_subText {
+    font-weight: bold;
+    font-size: 13px;
+    line-height: 18px;
+    letter-spacing: 0.5px;
+    color: white;
+}
+
+/*Текст внутри кнопки верхнего блока*/
+.btn_subText:hover {
+    color: #c6cc1b;
+    transition: 0.5s;
+}
+
+/*Обработка событий текста внутри кнопки верхнего блока*/
+.section_bot {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 78px;
+}
+
+/*Настройки нижнего блока Services*/
+.bot_col4-1 {
+    position: relative;
+    border: 1px solid #E6E6E6;
+    width: 251px;
+    height: 153px;
+    padding: 138px 22px 39px;
+}
+
+/*Настройки карточки нижнего блока Services*/
+.sec2Bot_pic1 {
+    position: absolute;
+    left: 23px;
+    top: 38px;
+}
+
+/*Настройки картинки карточек нижнего блока Services*/
+.bot_text1 {
+    margin: 0;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.426667px;
+    color: #48555B;
+}
+
+/*Настройки первого текста внутри карточек нижнего блока Services*/
+.bot_subText {
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 23px;
+    letter-spacing: 0.1875px;
+    color: #48555B;
+}
+
+/*Настройки второго текста внутри карточек нижнего блока Services*/
+.bot_hero {
+    background: url("../images/bg1.png") no-repeat center/cover;
+    height: 499px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 120px;
+}
+
+.botHero_mainText {
+    width: 350px;
+    height: 72px;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 36px;
+    letter-spacing: 0.15px;
+    text-align: center;
+    color: #48555B;
+}
+
+.content {
+    height: 100px;
+    background: #171819;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -2px;
+}
+
+.subContent {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 685px;
+    height: 40px;
+}
+
+.subCon_inp {
+    margin: 0;
+    border: none;
+    width: 234px;
+    height: 38px;
+    padding-left: 16px;
+}
+
+.subCont_btn_text {
+    display: flex;
+    height: 40px;
+}
+
+.subCont_btn_text .btn_allServ {
+    height: 40px;
+}
+
+.subCon_inp::placeholder { /* Most modern browsers support this now. */
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 19px;
+    letter-spacing: 0.07px;
+    color: #48555B;
+}
+
+.content_btn {
+    margin-left: -2px;
+}
+
+.subContent_text {
+    text-align: center;
+    height: 40px;
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 30px;
+    letter-spacing: 0.846154px;
+    color: #FFFFFF;
+}
+
+.top_footer{
+    height: 160px;
+    padding: 40px 262px 40px 240px;
+    background: #141A20;
+}
+.top_footer_container{
+    display: flex;
+}
+.top_footer_title{
+    font-weight: normal;
+    font-size: 11px;
+    line-height: 15px;
+    letter-spacing: 0.846154px;
+    color: #FFFFFF;
+}
+.top_footer_about{
+    width: 250px;
+    height: 148px;
+}
+.top_footer_navBar{
+    width: 262px;
+    height: 150px;
+}
+.top_footer_contactUs{
+    width: 141px;
+    height: 158px;
+}
+.top_footer_titleSubTxt{
+    width: 250px;
+    height: 76px;
+    font-weight: normal;
+    font-size: 11px;
+    line-height: 19px;
+    letter-spacing: 0.85px;
+    color: #FFFFFF;
+}
+.top_footer_navBar{
+    margin: 0 58px 0 71px;
+}
+.top_footer_links{
+    display: flex;
+    flex-direction: column;
+}
+.links_top_footer{
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 25px;
+    letter-spacing: 0.846154px;
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+}
+.links_top_footer:hover{
+    color: dodgerblue;
+    transition: 0.5s;
+}
+.top_footer_nav{
+    display: flex;
+    justify-content: space-between;
+}
+.address{
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+.addressTxt{
+    font-weight: normal;
+    font-size: 11px;
+    line-height: 16px;
+    letter-spacing: 0.846154px;
+    color: white;
+    margin: 0 0 10px 0;
+}
+.top_footerLogos{
+    width: 100px;
+    padding-top: 30px;
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    margin-left: 46px;
+}
+.footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+    background: #171819;
+}
+.footerTxt{
+    font-weight: normal;
+    font-size: 11px;
+    line-height: 15px;
+    letter-spacing: 0.846154px;
+    margin: 0;
+    color: #FFFFFF;
+}
+.linkss{
+    text-transform: none;
+    color: white;
+}
+.linkss:hover{
+    color: cornflowerblue;
+    transition: 0.5s;
+}
+/*CSS ВТОРОГО ЗАДАНИЯ*/
+/*.test_text{*/
+/*    margin-top: 70px;*/
+/*    display: flex;*/
+/*    justify-content: center;*/
+/*    margin-bottom: 10px;*/
+/*}*/
+/*.test{*/
+/*    padding: 20px;*/
+/*    height: 900px;*/
+/*    display: flex;*/
+/*    justify-content: center;*/
+/*    align-items: center;*/
+/*}*/
+/*.col6_1{*/
+/*    background-color: #a32626;*/
+/*    height: 750px;*/
+/*    width: 50%;*/
+/*    border: solid black 2px;*/
+/*}*/
+/*.col6_2{*/
+/*     background-color: #387038;*/
+/*     height: 750px;*/
+/*     width: 50%;*/
+/*     border: solid black 2px;*/
+
+/*    display: flex;*/
+/*    justify-content: space-between;*/
+/* }*/
+/*.col4_1_1{*/
+/*    background-color: deepskyblue;*/
+/*    width: 33.33333%;*/
+/*    height: 250px;*/
+/*}*/
+/*.col4_2_2{*/
+/*    background-color: blueviolet;*/
+/*    width: 33.33333%;*/
+/*    height: 250px;*/
+/*    margin-left: 20px;*/
+/*}*/
+/*.col4_3_3{*/
+/*    background-color: burlywood;*/
+/*    width: 33.33333%;*/
+/*    height: 250px;*/
+/*    margin-left: 20px;*/
+/*}*/
